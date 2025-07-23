@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Velasquez - Proyectos</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel ="icon" href="imagenes/icono.avif" type="image/x-icon">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Actividad</a>
+  </nav>
+  <header>
+    <div class="info-header">
+      <h1>Eduardo Velasquez</h1>
+    </div>
+    <img src="imagenes/fotoperfil.jpg" alt="Fotografía de Eduardo Velasquez">
+  </header>
+
+  <main class="contenedor">
+    <section class="contenido">
+      <h2>Intereses y Habilidades</h2>
+      <ul>
+        <li>Me interesa la tecnología</li>
+        <li>Aprender cosas nuevas</li>
+        <li>Trabajo en equipo</li>
+        <li>Aprendizaje rápido</li>
+        <li>Desempeño eficaz</li>
+        <li>Eficiente</li>
+        <li>Responsable</li>
+      </ul>
+
+      <p>🎥 <a href="https://youtu.be/4jYOOk-cJj0?si=dq2g48YzmYwObLWd" target="_blank">YouTube</a></p>
+      <p>📄 <a href="formulario.html" target="_blank">Formulario de contacto</a></p>
+    </section>
+  </main>
+
+    <footer>
+    <div class="footer-contenido">
+      <p>&copy; 2025 Eduardo Velasquez. Todos los derechos reservados.</p>
+      <p>Carrera: Perito en desarrollo de continido digital y Software</p>
+      <p>Redes sociales:
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </p>
+      <p id="fecha-actual"></p>
+    </div>
+  </footer>
+
+  <script>
+    // Mostrar fecha actual en el pie de página
+    const fecha = new Date();
+    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("fecha-actual").textContent = `Fecha: ${fecha.toLocaleDateString('es-ES', opciones)}`;
+  </script>
+
+</body>
+</html>
+

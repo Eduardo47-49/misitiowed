@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /> <!-- Define la codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Hace la página responsive -->
+  <title>Mi Página Personal</title>
+  <!-- Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="estilos/styles.css" />
+  <!-- Icono de la pestaña del navegador -->
+  <link rel ="icon" href="imagenes/icono.avif" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Barra de navegación principal -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Actividad</a>
+  </nav>
+
+  <!-- Encabezado principal de la página -->
+  <header>
+    <h1>Bienvenido a Mi Página Personal</h1>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main class="contenedor">
+    <!-- Sección sobre el autor -->
+    <section class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Hola, mi nombre es Eduardo Velasquez. Soy una persona apasionada por el desarrollo web y la tecnología. 
+        En esta página compartiré más sobre mi trabajo, mis proyectos y mis intereses.</p>
+    </section>
+
+    <!-- Sección de habilidades técnicas -->
+    <section class="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <div class="grid-skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Java</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página con información de contacto y derechos -->
+  <footer>
+    <div class="footer-contenido">
+      <p>&copy; 2025 Eduardo Velasquez. Todos los derechos reservados.</p>
+      <p>Carrera: Perito en desarrollo de continido digital y Software</p>
+      <p>Redes sociales:
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </p>
+      <p id="fecha-actual"></p> <!-- Aquí se mostrará la fecha actual -->
+    </div>
+    <!-- Script para mostrar la fecha actual en español -->
+    <script>
+      const fecha = new Date();
+      const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById("fecha-actual").textContent = `Fecha: ${fecha.toLocaleDateString('es-ES', opciones)}`;
+    </script>
+  </footer>
+
+</body>
+</html>
